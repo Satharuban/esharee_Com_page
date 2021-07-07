@@ -1,6 +1,5 @@
 import React from 'react'
-import {Paper,Typography,Grid,Divider,Chip,Avatar} from '@material-ui/core'
-var x=1;
+import {Paper,Typography,Grid,Divider} from '@material-ui/core'
 const tasks=[
 {
     name:'1',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import { AppBar, Button } from '@material-ui/core/';
+import { AppBar ,Button} from '@material-ui/core/';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -14,6 +14,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../assets/navbar/EShareLogoNoBG.png'
+import { useSelector } from 'react-redux';
+import MenuItems from './Menu';
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -112,7 +114,13 @@ export default function PrimarySearchAppBar() {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const auth = useSelector(state => state.auth)
 
+  const { isLogged } = auth
+
+  const userLink = () => {
+    return <MenuItems />
+  }
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -157,6 +165,7 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
+      
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="secondary">
@@ -199,8 +208,10 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton> */}
+                      <img src={Logo} alt="logo" height="35px" />
+
           <Typography className={classes.title} variant="h6" noWrap>
-            <img src={Logo} alt="logo" height="35px" />
+            {/* <img src={Logo} alt="logo" height="35px" /> */}
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon} >
@@ -227,15 +238,23 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <button style={{
+           
+          {
+              isLogged
+                ? userLink()
+                :          <div style={{display:"flex"}}>   <Button style={{
           
              
-            }}  className={classes.buttonLogin}>
-              Log In
-            </button>
-            <button  className={classes.button}>
-              Sign Up
-            </button>
+                }} href="/login"  className={classes.buttonLogin}>
+                  Log In
+                </Button>
+                <Button  className={classes.button}>
+                  Sign Up
+                </Button></div>
+            }
+
+           
+
             {/* <IconButton aria-label="show 4 new mails" color="inherit" style={{ color: "black" }}>
               <Badge badgeContent={4} color="secondary">
                 <MailIcon />
@@ -259,13 +278,13 @@ export default function PrimarySearchAppBar() {
             </IconButton> */}
           </div>
           <div className={classes.sectionMobile}>
+            {isLogged ? userLink() : null}
             <IconButton
               aria-label="show more"
               aria-controls={mobileMenuId}
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
               color="inherit"
-              style={{ color: "black" }}
             >
               <MoreIcon />
             </IconButton>

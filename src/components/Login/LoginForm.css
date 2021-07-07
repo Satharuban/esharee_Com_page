@@ -1,0 +1,62 @@
+.login-form > span{
+    text-align: center;
+}
+
+.inner-form{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+
+.ico-text {
+    color: #FFF;
+}
+
+.sign-line {
+    display: flex;
+  flex-direction: row;
+  color: gray;
+  padding-top: 10px;
+}
+
+.sign-line::before, .sign-line::after {
+    content: "";
+  flex: 1 1;
+  border-bottom: 1px solid gray;
+  margin: auto;
+}
+
+.sign-line::before {
+    margin-right: 10px;
+}
+
+.sign-line::after {
+    margin-left: 10px
+}
+
+.auth-btn{
+    border: none;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.auth-grid {
+    padding-top: 20px;
+}
+
+.card{
+    border: solid 0.01px;
+    border-color: #DAE0E6;
+ 
+     padding-bottom: 1%;
+     background-color: rgb(255, 255, 255);
+   }
+ .card:hover {
+     -ms-transform: scale(1); /* IE 9 */
+     -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.01); 
+     padding-bottom: 1%;
+     border: none;
+     box-shadow: 1px 1px 10px 1px #DAE0E6;
+   }

@@ -1,0 +1,7 @@
+.login-modal {
+    text-align: center;
+}
+
+.login-modal > p{
+    cursor: pointer;
+}
