@@ -7,7 +7,9 @@ import  AddCard from '../components/CreatePost/addCard'
 
 export default function Home() {
     return(
-        <div style={{backgroundColor:"#DAE0E6",height:1000}}>
+        <div 
+        // style={{backgroundColor:"#DAE0E6",height:"100%"}}
+        >
 
 
 <Navbar/>   
@@ -23,7 +25,7 @@ export default function Home() {
 </Grid>
 <Grid item xs={12} sm={12} md={3} lg={3} xl={3}  >
     <br/>
-<div style={{borderRadius:10,margin:"10px 5px 5px 5px"}}><Leaderboard/></div>
+<div style={{borderRadius:10,margin:"10px 5px 5px 5px",position:'fixed'}}><Leaderboard/></div>
 </Grid>
 <Grid item xs={false} sm={false} md={1} lg={1} xl={1} >
 

@@ -99,12 +99,12 @@ const AddCard = () => {
 
     return (
 
-        <Paper elevation={0}  style={{margin:10 ,borderRadius:10}}  >
+        <Paper elevation={0} style={{ margin: 10, borderRadius: 10 }}  >
             <Grid container
                 direction="row"
                 justifyContent="center"
                 alignItems="center">
-                <Grid item>
+                <Grid item sm={8}>
 
                     <InputBase
                         variant="outlined"
@@ -122,11 +122,34 @@ const AddCard = () => {
                         style={{ width: "100%", backgroundColor: '#EFF1F7', borderRadius: 10, padding: 10, margin: 10 }}
                     />
                 </Grid>
-                <Grid item>
-                <ImageUploder/>
-                </Grid>
-                <Grid item>
+                <Grid item sm={1}>
+                
+<div>
+<form >
+  <input type="file" id="myFile" name="filename"/>
 
+
+</form>
+</div>
+                </Grid>
+                <Grid item sm={1}>
+
+                    <i class="fas fa-image"></i>
+                </Grid>
+                <Grid item  sm={2}>
+                    <Button style={{
+                        display: 'flex',
+                        borderRadius: 10, borderColor: "re#CF0505d", width: 'auto', color: "white", height: 35, fontSize: 15, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
+                        fontWeight: 800,
+                        border: " 0px solid transparent",
+                        backgroundColor: "#CF0505",
+                        '&:hover': {
+                            borderColor: '#0062cc',
+                            boxShadow: "1px 1px 10px 10px #fff2f2",
+                        },
+                    }}>
+                        Post
+                    </Button>
                 </Grid>
             </Grid>
         </Paper>
