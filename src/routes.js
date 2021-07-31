@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import NotFound from './components/utils/NotFound/NotFound';
 import ActivationEmail from './pages/ActivationEmail';
 import Animate from './components/animate';
+
 import { useSelector } from 'react-redux'; 
 
 

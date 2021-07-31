@@ -198,7 +198,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar elevation={1} position="static" style={{ backgroundColor: "white", boxShadow: "1px 1px 10px 10px #dedcdc", }}>
+      <AppBar elevation={1} position="fixed" style={{ backgroundColor: "white", boxShadow: "1px 1px 10px 10px #dedcdc" }}>
         <Toolbar>
           {/* <IconButton
             edge="start"

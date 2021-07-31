@@ -6,6 +6,12 @@ import AppleLogin from 'react-apple-login';
 import GoogleLogo from '../../assets/google-icon.svg';
 import FBLogo from '../../assets/fb-logo.png';
 import AppleLogo from '../../assets//apple-logo.png';
+import ImageIcon from '@material-ui/icons/Image';
+import MovieIcon from '@material-ui/icons/Movie';
+import AttachmentIcon from '@material-ui/icons/Attachment';
+import Attachment from './modal';
+import ImageUploader from './fileModal';
+import Video from './videoModal'
 import { useStyles } from '../../components/styles';
 import {
     Grid,
@@ -15,9 +21,9 @@ import {
     CssBaseline,
     InputBase,
     Paper,
-    Link,
     Container,
-    Typography
+    Typography,
+    IconButton
 } from '@material-ui/core';
 import axios from 'axios';
 import { showErrMsg, showSuccessMsg } from '../utils/Notification/Notification';
@@ -94,7 +100,10 @@ const AddCard = () => {
                 setUser({ ...user, err: err.response.data.msg, success: '' })
         }
     };
-
+    const handleMobileMenuClose = () => {
+       <ImageUploder/>
+      };
+    
     const classes = useStyles();
 
     return (
@@ -104,7 +113,7 @@ const AddCard = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center">
-                <Grid item sm={8}>
+                <Grid item sm={7}>
 
                     <InputBase
                         variant="outlined"
@@ -122,25 +131,36 @@ const AddCard = () => {
                         style={{ width: "100%", backgroundColor: '#EFF1F7', borderRadius: 10, padding: 10, margin: 10 }}
                     />
                 </Grid>
-                <Grid item sm={1}>
-                
-<div>
-<form >
-  <input type="file" id="myFile" name="filename"/>
+                <Grid item sm={3}  container
+                direction="row"
+                justifyContent="flex-end"
+                alignItems="flex-end"
+                spacing={2}>
+                    
+                {/* <IconButton onclick={handleMobileMenuClose}><AttachmentIcon/></IconButton> */}
+                <Grid item></Grid>
+
+<Grid item><ImageUploader/></Grid><Grid item><Attachment/></Grid>
+<Grid item><Video/></Grid>
 
 
-</form>
-</div>
+                 {/* <IconButton><ImageIcon/></IconButton>
+                 <IconButton><MovieIcon/></IconButton> */}
+<div ></div>
+
                 </Grid>
-                <Grid item sm={1}>
+                {/* <Grid item sm={1}>
+                <IconButton><MovieIcon/></IconButton>
 
-                    <i class="fas fa-image"></i>
-                </Grid>
-                <Grid item  sm={2}>
+
+                   
+                </Grid> */}
+                <Grid item Container justifyContent="flex-end"
+                alignItems="flex-end"  sm={2}>
                     <Button style={{
                         display: 'flex',
                         borderRadius: 10, borderColor: "re#CF0505d", width: 'auto', color: "white", height: 35, fontSize: 15, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
-                        fontWeight: 800,
+                        fontWeight: 400,
                         border: " 0px solid transparent",
                         backgroundColor: "#CF0505",
                         '&:hover': {

@@ -37,17 +37,38 @@ export default function App() {
               style={isDragging ? { color: "red" } : null}
               onClick={onImageUpload}
               {...dragProps}
+              style={{display: '',
+              borderRadius: 10, borderColor: "#CF0505", width: 'auto', color: "#CF0505", height: 35, fontSize: 13, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
+              fontWeight: 800,
+              border: " 2px solid #CF0505",
+              backgroundColor: "transparent",
+             }}
             >
               Click or Drop here
             </button>
             &nbsp;
-            <button onClick={onImageRemoveAll}>Remove all images</button>
+            <button onClick={onImageRemoveAll}style={{display: '',
+              borderRadius: 10, borderColor: "#CF0505", width: 'auto', color: "#CF0505", height: 35, fontSize: 13, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
+              fontWeight: 800,
+              border: " 2px solid #CF0505",
+              backgroundColor: "transparent",
+             }}>Remove all images</button>
             {imageList.map((image, index) => (
               <div key={index} className="image-item">
                 <img src={image.data_url} alt="" width="100" />
                 <div className="image-item__btn-wrapper">
-                  <button onClick={() => onImageUpdate(index)}>Update</button>
-                  <button onClick={() => onImageRemove(index)}>Remove</button>
+                  <button onClick={() => onImageUpdate(index)}style={{display: '',
+              borderRadius: 10, borderColor: "green", width: 'auto', color: "green", height: 35, fontSize: 13, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
+              fontWeight: 800,
+              border: " 2px solid #CF0505",
+              backgroundColor: "transparent",
+             }}>Update</button>
+                  <button onClick={() => onImageRemove(index)}style={{display: '',
+              borderRadius: 10, borderColor: "#CF0505", width: 'auto', color: "#CF0505", height: 35, fontSize: 13, margin: "1px 5px 1px 5px", padding: '5px 15px 5px 15px',
+              fontWeight: 800,
+              border: " 2px solid #CF0505",
+              backgroundColor: "transparent",
+             }}>Remove</button>
                 </div>
               </div>
             ))}

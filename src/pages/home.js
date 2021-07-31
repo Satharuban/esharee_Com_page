@@ -11,9 +11,10 @@ export default function Home() {
         // style={{backgroundColor:"#DAE0E6",height:"100%"}}
         >
 
-
-<Navbar/>   
+<Navbar/><br/> <br/> <br/><br/> 
 <Grid container>
+
+
 <Grid container direction='row'>
 <Grid item xs={false} sm={false} md={1} lg={1} xl={1} >
 

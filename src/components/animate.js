@@ -3,76 +3,54 @@ import React from 'react';
 
 
 
+
 function App() {
   return (
     <div className="App">
 
-<body>
-    <div class="banner1">
-      <img
-        src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
-      />
-      <div class="text-box text-box1">
-        <h1>Silence Is Not Enough</h1>
-        <span></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum
-          quisquam at tenetur eveniet quas officiis reiciendis error aliquid
-          impedit, tempore in magni, omnis quae. Natus aliquid itaque esse
-          error.
-        </p>
-      </div>
-    </div>
 
-    <div class="banner2">
-      <img
-        src="https://images.unsplash.com/photo-1571419816020-fcb3d260164d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-      />
-      <div class="text-box text-box2">
-        <h1>Future Of The Next Generation</h1>
-        <span></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum
-          quisquam at tenetur eveniet quas officiis reiciendis error aliquid
-          impedit, tempore in magni, omnis quae. Natus aliquid itaque esse
-          error.
-        </p>
-      </div>
-    </div>
+<div class="cont">
+	<div class="mouse"></div>
+	<div class="app">
+		<div class="app__bgimg">
+			<div class="app__bgimg-image app__bgimg-image--1">
+			</div>
+			<div class="app__bgimg-image app__bgimg-image--2">
+			</div>
+		</div>
+		<div class="app__img">
+			<img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+		</div>
+		
+		<div class="app__text app__text--1">
+			<div class="app__text-line app__text-line--4">imperdiet </div>
+			<div class="app__text-line app__text-line--3">ut le</div>
+			<div class="app__text-line app__text-line--2">non tincidunt </div>
+			<div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+		</div>
+		
+		<div class="app__text app__text--2">
+			<div class="app__text-line app__text-line--4">habitant</div>
+			<div class="app__text-line app__text-line--3">ut eget</div>
+			<div class="app__text-line app__text-line--2">Nam imperdiet</div>
+			<div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="pages">
+		<ul class='pages__list'>
+			<li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+			<li data-target='2' class='pages__item pages__item--2'></li>
+		</ul>
+	</div>
+</div>
+<a href="https://dribbble.com/shots/2936160-Opus-Animation" target="_blank" class="icon-link">
+    <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png"/>
+  </a>
+  <a href="https://twitter.com/mrspok407" target="_blank" class="icon-link icon-link--twitter">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png"/>
+  </a>
 
-    <div class="banner3">
-      <img
-        src="https://images.unsplash.com/photo-1613371005024-bb67527dc4b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-      />
-      <div class="text-box text-box3">
-        <h1>Know Your Passion</h1>
-        <span></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum
-          quisquam at tenetur eveniet quas officiis reiciendis error aliquid
-          impedit, tempore in magni, omnis quae. Natus aliquid itaque esse
-          error.
-        </p>
-      </div>
-    </div>
-
-    <div class="banner4">
-      <img
-        src="https://images.unsplash.com/photo-1554290712-e640351074bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1330&q=80"
-      />
-      <div class="text-box text-box4">
-        <h1>Keep Your Dreams Alive</h1>
-        <span></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum
-          quisquam at tenetur eveniet quas officiis reiciendis error aliquid
-          impedit, tempore in magni, omnis quae. Natus aliquid itaque esse
-          error.
-        </p>
-      </div>
-    </div>
-  </body>
-   </div>
+ </div>
   );
 }
 
