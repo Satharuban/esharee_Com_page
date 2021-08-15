@@ -151,7 +151,8 @@ const PostCard = () => {
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}>
+         {/* <Typography
                         variant="caption"
                         
                         gutterBottom
@@ -159,7 +160,9 @@ const PostCard = () => {
                     >
                         {" "}
                         Comments
-                    </Typography> </Grid>
+                    </Typography> */}
+                    <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+                     </Grid>
 
                 </Grid>
            
@@ -217,15 +220,8 @@ William Smith
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
-                        variant="caption"
-                        
-                        gutterBottom
-                        style={{ fontSize: 15, fontWeight: 700, margin: 20 }}
-                    >
-                        {" "}
-                        Comments
-                    </Typography> </Grid>
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}>                     <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+ </Grid>
 
                 </Grid>
         </Paper>
@@ -283,15 +279,8 @@ William Smith
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
-                        variant="caption"
-                        
-                        gutterBottom
-                        style={{ fontSize: 15, fontWeight: 700, margin: 20 }}
-                    >
-                        {" "}
-                        Comments
-                    </Typography> </Grid>
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}>                     <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+ </Grid>
 
                 </Grid>
         </Paper>
@@ -347,15 +336,8 @@ William Smith
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
-                        variant="caption"
-                        
-                        gutterBottom
-                        style={{ fontSize: 15, fontWeight: 700, margin: 20 }}
-                    >
-                        {" "}
-                        Comments
-                    </Typography> </Grid>
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}>                    <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+ </Grid>
 
                 </Grid></Paper>
         <Paper elevation={0} style={{ margin: 10, borderRadius: 10,boxShadow: "1px 1px 10px 1px #DAE0E6", }}  >
@@ -411,15 +393,8 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
-                        variant="caption"
-                        
-                        gutterBottom
-                        style={{ fontSize: 15, fontWeight: 700, margin: 20 }}
-                    >
-                        {" "}
-                        Comments
-                    </Typography> </Grid>
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}>                    <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+ </Grid>
 
                 </Grid>
         </Paper>
@@ -477,15 +452,10 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
                 alignItems="">
 <Grid item sm={1}> <IconButton><ThumbUpAltIcon/></IconButton> 
     </Grid>
-    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> <Typography
-                        variant="caption"
-                        
-                        gutterBottom
-                        style={{ fontSize: 15, fontWeight: 700, margin: 20 }}
-                    >
-                        {" "}
-                        Comments
-                    </Typography> </Grid>
+    <Grid item style={{ fontSize: 15, fontWeight: 700, margin: 10 }}> 
+    <Button  href="./viewPage"style={{textTransform:"none" }}>Answers</Button>
+
+                     </Grid>
 
                 </Grid> 
                 </Paper>

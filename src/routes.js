@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import NotFound from './components/utils/NotFound/NotFound';
 import ActivationEmail from './pages/ActivationEmail';
 import Animate from './components/animate';
+import ViewPage from './components/CreatePost/ViewPage';
 
 import { useSelector } from 'react-redux'; 
 
@@ -26,6 +27,7 @@ function ClientRoute() {
             <Route exact path="/register" component={Register} />
 
             <Route exact path="/animate" component={Animate} />
+            <Route exact path="/viewPage" component={ViewPage} />
 
         </Switch>
     );
